@@ -1,0 +1,196 @@
+@font-face
+{
+	font-family: Orator;
+	src: url("OratorStd.eot");
+	src: url("OratorStd.eot#iefix") format('embedded-opentype'), url("OratorStd.otf") format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+body
+{
+    margin-top: 20px;
+    background-color: #404040;
+    font-family: 'Orator';
+    text-align: center;
+    color: #fff;
+}
+footer > iframe
+{
+    border: none;
+    overflow: hidden;
+    width: 5em;
+    height: 4.063em;
+}
+#youtube
+{
+    width: 35em;
+    height: 19.688em;
+    border: 0;
+}
+#soundcloud
+{
+    width: 20.625em;
+    height: 19.688em;
+    border: 0;
+}
+.destaque
+{
+    color: #000;
+}
+.convites
+{
+	background-color: #fea82d;
+	width: 200px;
+	margin: 10px auto 10px auto;
+	font-weight: bold;
+	border-radius: 7px;
+	display: block;
+}
+.convites a
+{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+/* CONVITES */
+.div-form
+{
+	width: 100%;
+	margin: 2%px;
+}
+#convites
+{
+	font-family: Tahoma, Verdana, Arial;
+	letter-spacing: 2px;
+	line-height: 25px;
+}
+fieldset
+{
+	width: 720px;
+	margin: 0 auto 0 auto;
+	padding: 15px 50px 15px 40px;
+}
+input, textarea
+{
+	border-radius: 7px;
+	border: 1px solid #333;
+	padding: 5px;
+	width: 98%;
+	margin: 2px 0 2px 0;
+	resize: none;
+	float: left;
+}
+.input-meio-esq
+{
+	width: 48%;
+	margin-right: 2px;
+}
+.input-meio-dir
+{
+	width: 48%;
+}
+.btn
+{
+	width: 190px;
+	height: 40px;
+	margin: 5px auto 5px auto;
+	clear: both;
+	float: none;
+	background-color: #4eae00;
+	font-weight: bold;
+	color: #fff;
+	border: 0;
+	text-shadow: 1px 1px 1px #000000;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	font-size: 11pt;
+}
+.obs
+{
+	font-weight: normal;
+	margin: 10px 0 0 0;
+	font-size: 8pt;
+}
+form
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 11pt;
+}
+legend
+{
+	color: #ddd;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/* SRMATPHONES */
+@media all and (max-width: 688px)
+{
+	#youtube
+	{
+		width: 20.625em;
+		height: 11.563em;
+	}
+}
+@media all and (max-width: 850px)
+{
+	fieldset {
+		width: 90%;
+		padding: 15px 0 15px 10px;
+	}
+	.input-meio-esq
+	{
+		width: 47%;
+	}
+	.input-meio-dir
+	{
+		width: 47%;
+	}
+	input, textarea
+	{
+		width: 96%;
+	}
+}
+
+@media all and (max-width: 736px)
+{
+	fieldset {
+		width: 90%;
+		padding: 15px 0 15px 10px;
+	}
+	.input-meio-esq
+	{
+		width: 45%;
+	}
+	.input-meio-dir
+	{
+		width: 45%;
+	}
+	input, textarea
+	{
+		width: 93%;
+	}
+}
+
+@media all and (max-width: 600px)
+{
+	fieldset {
+		width: 90%;
+		padding: 15px 0 15px 10px;
+	}
+	.input-meio-esq
+	{
+		width: 44%;
+	}
+	.input-meio-dir
+	{
+		width: 44%;
+	}
+	input, textarea
+	{
+		width: 92%;
+	}
+}

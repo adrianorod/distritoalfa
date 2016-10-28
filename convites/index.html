@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+	<meta name="description" content="Projeto independente que leva arte em forma de m&uacute;sicas que suscitam reflex&atilde;o. Convide-nos!" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Distrito Alfa - Convites</title>
+    <link href="../estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../logo-distrito-alfa.png" alt="Distrito Alfa" /></a>
+        <p>Vida, simplicidade e m&uacute;sica</p>
+    </header>
+    <main id="convites">
+    	<p>Preencha o formul&aacute;rio abaixo com os dados a respeito do evento. Lhe responderemos em breve!</p>
+        <form action="form-action.php" method="post">
+            <fieldset>
+                <legend>Sobre o evento</legend>
+                <div class="div-form">
+					<input class="input-meio-esq" name="nomeEvento" id="nomeEvento" type="text" placeholder="NOME DO EVENTO" title="Nome do evento" required/>
+					<input class="input-meio-dir" name="data" id="data" type="date" placeholder="DATA DO EVENTO" title="Data do evento" required/>
+					<input name="endereco" id="endereco" type="text" placeholder="ENDERE&Ccedil;O DO LOCAL" title="Endere&ccedil;o do local" required/>
+					<input class="input-meio-esq" name="horaInicio" id="horaInicio" type="time" placeholder="HORA DE IN&Iacute;CIO (PREVISTA)" title="Hora de in&iacute;≠cio (prevista)" required/>
+					<input class="input-meio-dir" name="horaTermino" id="horaTermino" type="time" placeholder="HORA DE T&Eacute;RMINO (PREVISTA)" title="Hora de t&eacute;rmino (prevista)" required/>
+					<input name="enderecoEletronico" id="enderecoEletronico" type="text" placeholder="ENDERE&Ccedil;O ELETR&Ocirc;NICO DO EVENTO (se houver - evento no Facebook, site, fanpage, etc.)" title="Endere&ccedil;o eletr&ocirc;nico do evento (se houver - evento no Facebook, site, fanpage, etc.)"/>
+					<input class="input-meio-esq" name="nomeResponsavel" id="nomeResponsavel" type="text" placeholder="NOME DO RESPONS&Aacute;VEL" title="Nome do respons&aacute;vel" required/>
+					<input class="input-meio-dir" name="telResponsavel" id="telResponsavel" type="tel" placeholder="TELEFONE DO RESPONS&Aacute;VEL" title="Telefone do respons&aacute;vel" required/>
+					<input name="emailResponsavel" id="emailResponsavel" type="email" placeholder="E-MAIL DO RESPONS&Aacute;ÅVEL" title="E-mail do respons&aacute;vel" required/>
+					<textarea name="objetivo" id="objetivo" rows="3" placeholder="OBJETIVO (Breve resumo de como ser&aacute; evento)" title="Objetivo (breve resumo de como ser&aacute; evento)"></textarea>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Sobre nossa participa√ß√£o</legend>
+				<div class="div-form">
+					<input name="passagemDeSom" id="passagemDeSom" type="time" placeholder="QUE HORAS PODEREMOS CHEGAR PARA PASSAR O SOM?" title="Que horas poderemos chegar para passar o som?"/>
+					<input name="tempoDeApresentacao" id="tempoDeApresentacao" type="text" placeholder="QUANTIDADE DE M&Uacute;SICAS (OU TEMPO DISPON&Iacute;çVEL)" title="Quantidade de m&uacute;sicas (ou tempo dispon&iacute;vel)"/>
+					<textarea name="cronograma" id="cronograma" rows="3" placeholder="CRONOGRAMA DO EVENTO E ONDE ESTAR&Iacute;AMOS ENCAIXADOS" title="Cronograma do evento e onde estar&iacute;amos encaixados"></textarea>
+					<textarea name="estrutura" id="estrutura" rows="3" placeholder="ESTRUTURA DE SOM / EQUIPAMENTOS / INSTRUMENTOS DISPON&Iacute;VEIS NO LOCAL*" title="Estrutua de som / Equipamentos / Instrumentos dispon&iacute;veis no local"></textarea>
+					<p class="obs"><em>*Normalmente levamos nossos instrumentos - exceto a bateria - e contamos com os equipamentos de som do local. Em alguns casos &eacute; necess&aacute;rio que levemos os pratos da bateria ou outros acess&oacute;rios, nesses casos, solicitamos que nos avise o que ser&aacute; necess&aacute;rio.</em></p>
+				</div>
+			</fieldset>
+			<input type="submit" class="btn" value="ENVIAR"/><br/>
+		</form>
+        <p><em>N&oacute;s n&atilde;o cobramos para tocar. Costumamos levar alguns acess&oacute;rios personalizados para venda, que nos ajudam a arcar com custos de locomo&ccedil;&atilde;o e manuten&ccedil;&atilde;o. Dependendo da dist&acirc;ncia, pedimos aux&iacute;lios apenas para os custos com transporte.</em></p>
+        <p>"Porque dele e por ele, e para ele, s&atilde;o todas as coisas; gl&oacute;ria pois, a ele eternamente. Am&eacute;m" (Rm 11.36)</p>
+    </main>
+    <footer>
+        <p>contato<span class="destaque">{arroba}</span>distritoalfa.com.br<br/>(21) 99808-4476 / 97945-9067</p>
+        <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fdistritoalfa&amp;width=80&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=65" scrolling="no" allowtransparency="true"></iframe>
+    </footer>
+</body>
+</html>
