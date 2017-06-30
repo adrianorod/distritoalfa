@@ -9,5 +9,6 @@
     /* jshint validthis: true*/
     var vm = this;
     $rootScope.activetab = $location.path();
+
   }
 })();
