@@ -1,36 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" ng-app="distritoalfa">
+
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Projeto independente que leva arte em forma de m&uacute;sicas e reflex&otilde;es.">
-    <link rel="icon" href="img/favicon.ico">
+
     <title>Distrito Alfa - Vida, simplicidade e m&uacute;sica</title>
+
+    <link rel="icon" href="img/favicon.ico">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilo.css" rel="stylesheet">
+
   </head>
+
   <body>
+
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
           <div class="masthead clearfix">
             <div class="inner">
+
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="/convites">Convites</a></li>
-                  <li><a href="/midias">M&iacute;dias</a></li>
+                  <li ng-class="{active: activetab == '/'}"><a href="#">Home</a></li>
+                  <li ng-class="{active: activetab == '/convites'}"><a href="#/convites">Convites</a></li>
+                  <li ng-class="{active: activetab == '/midias'}"><a href="#/midias">M&iacute;dias</a></li>
                 </ul>
               </nav>
+
               <h1 class="masthead-brand">Distrito Alfa <small>Vida, simplicidade e m&uacute;sica</small></h1>
+
             </div>
           </div>
           <div class="inner cover">
-            <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fdistritoalfa&amp;width=80&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=65" scrolling="no" allowtransparency="true"></iframe><br/>
-            <iframe class="youtube" src="https://www.youtube.com/embed/videoseries?list=PLk8_h6LMDlnCN8Pmiys59zQG0ABnwJTv8" allowfullscreen></iframe>
-            <iframe class="youtube" src="https://www.youtube.com/embed/videoseries?list=PLk8_h6LMDlnAXlrDrP-eqo-J6qY6x2J4l" allowfullscreen></iframe>
-            <!-- <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p> -->
+
+            <ng-view></ng-view>
+
           </div>
           <div class="mastfoot">
             <div class="inner">
@@ -40,5 +49,15 @@
         </div>
       </div>
     </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/controllers/homeController.js"></script>
+    <script src="app/controllers/convitesController.js"></script>
+    <script src="app/controllers/midiasController.js"></script>
+
   </body>
+
 </html>
