@@ -236,6 +236,31 @@ h1#logo span {
   display: none;
 }
 
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 30px;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.legend-destaque1 {
+  color: #ff9900;
+  font-size: 1.3em;
+}
+
+.legend-destaque2 {
+  font-size: 1em;
+}
+
+legend {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 /* animations */
 
 @keyframes fadein {
