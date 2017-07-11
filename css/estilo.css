@@ -67,6 +67,9 @@ body {
   margin-bottom: 10px;
 }
 
+.masthead-nav {
+  float: right;
+}
 .masthead-nav > li {
   display: inline-block;
 }
@@ -97,9 +100,6 @@ body {
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;
-  }
-  .masthead-nav {
-    float: right;
   }
 }
 
@@ -178,10 +178,62 @@ iframe {
   float: inherit;
 }
 
-.facebook {
-  overflow: hidden;
-  width: 5em;
-  height: 4.063em;
+#redessociais {
+  float: left;
+}
+
+#redessociais a {
+  margin-right: 3px;
+  display: block;
+  width: 29px;
+  height: 28px;
+  float: left;
+}
+
+#redessociais .facebook {
+  background-image: url('../img/socialFacebook.png');
+}
+
+#redessociais .facebook:hover {
+  background-image: url('../img/socialFacebookColor.png');
+  text-decoration: none;
+}
+
+#redessociais .instagram {
+  background-image: url('../img/socialInstagram.png');
+}
+
+#redessociais .instagram:hover {
+  background-image: url('../img/socialInstagramColor.png');
+  text-decoration: none;
+}
+#redessociais .twitter {
+  background-image: url('../img/socialTwitter.png');
+}
+
+#redessociais .twitter:hover {
+  background-image: url('../img/socialTwitterColor.png');
+  text-decoration: none;
+}
+#redessociais .youtube {
+  background-image: url('../img/socialYouTube.png');
+}
+
+#redessociais .youtube:hover {
+  background-image: url('../img/socialYouTubeColor.png');
+  text-decoration: none;
+}
+
+h1#logo {
+  width: 233px;
+  height: 253px;
+  background-image: url('../img/distritoalfa.png');
+  background-size: contain;
+  margin: 60px auto 0 auto;
+}
+
+h1#logo span {
+  display: none;
 }
 
 /* animations */

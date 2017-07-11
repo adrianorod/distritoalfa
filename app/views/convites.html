@@ -1,92 +1,63 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="utf-8" />
-	<meta name="description" content="Projeto independente que leva arte em forma de m&uacute;sicas que suscitam reflex&atilde;o. Convide-nos!" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Distrito Alfa - Convites</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
-	<link href="../estilo.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-	<header>
-		<a href="../index.html"><img src="../logo-distrito-alfa.png" alt="Distrito Alfa" /></a>
-		<p>Vida, simplicidade e m&uacute;sica</p>
-	</header>
-	<main id="convites">
-		<p>Preencha o formul&aacute;rio abaixo com os dados a respeito do evento. Lhe responderemos em breve!</p>
-		<p>Caso voc&ecirc; tenha alguma d&uacute;vida ou dificuldade, por favor, entre em contato para conversarmos. Voc&ecirc; consegue nos encontrar no e-mail <strong>contato<span class="destaque">{arroba}</span>distritoalfa.com.br</strong> e nos telefones <strong>(21) 99808-4476</strong> e <strong>(21) 97945-9067</strong>.</p>
-		<form action="form-action.php" method="post">
-			<fieldset>
-				<legend>Sobre o evento</legend>
-				<div class="div-form">
-					<input name="nomeEvento" id="nomeEvento" type="text" placeholder="NOME DO EVENTO" title="Nome do evento" required/>
-					<input name="endereco" id="endereco" type="text" placeholder="ENDERE&Ccedil;O DO LOCAL" title="Endere&ccedil;o do local" required/>
-					<fieldset class="fieldset-interno">
-						<legend>DATA DO EVENTO</legend>
-						<input name="data" id="data" type="date" placeholder="DATA DO EVENTO" title="Data do evento" required/>
-					</fieldset>
-					<fieldset class="fieldset-interno">
-						<legend>HORA DE IN&Iacute;CIO (PREVISTA)</legend>
-						<input name="horaInicio" id="horaInicio" type="time" placeholder="HORA DE IN&Iacute;CIO (PREVISTA)" title="Hora de in&iacute;cio (prevista)" required/>
-					</fieldset>
-					<fieldset class="fieldset-interno">
-						<legend>HORA DE T&Eacute;RMINO (PREVISTA)</legend>
-						<input name="horaTermino" id="horaTermino" type="time" placeholder="HORA DE T&Eacute;RMINO (PREVISTA)" title="Hora de t&eacute;rmino (prevista)" required/>
-					</fieldset>
-					<input name="enderecoEletronico" id="enderecoEletronico" type="text" placeholder="ENDERE&Ccedil;O ELETR&Ocirc;NICO DO EVENTO (se houver - evento no Facebook, site, fanpage, etc.)" title="Endere&ccedil;o eletr&ocirc;nico do evento (se houver - evento no Facebook, site, fanpage, etc.)"/>
-					<input class="input-meio-esq" name="nomeResponsavel" id="nomeResponsavel" type="text" placeholder="NOME DO RESPONS&Aacute;VEL" title="Nome do respons&aacute;vel" required/>
-					<input class="input-meio-dir" name="telResponsavel" id="telResponsavel" type="tel" placeholder="TELEFONE DO RESPONS&Aacute;VEL" title="Telefone do respons&aacute;vel" required/>
-					<input name="emailResponsavel" id="emailResponsavel" type="email" placeholder="E-MAIL DO RESPONS&Aacute;VEL" title="E-mail do respons&aacute;vel" required/>
-					<textarea name="objetivo" id="objetivo" rows="3" placeholder="OBJETIVO (Breve resumo de como ser&aacute; evento)" title="Objetivo (breve resumo de como ser&aacute; evento)"></textarea>
+<h2>Convites</h2>
+<p>Preencha o formul&aacute;rio abaixo com os dados a respeito do evento. Lhe responderemos em breve!</p>
+<p>Caso voc&ecirc; tenha alguma d&uacute;vida ou dificuldade, por favor, entre em contato para conversarmos. Voc&ecirc; consegue nos encontrar no e-mail <strong>contato<span class="destaque">{&#64;}</span>distritoalfa.com.br</strong> e nos telefones <strong>(21) 97945-9067</strong> e <strong>(21) 99808-4476</strong>.</p>
+<form action="form-action.php" method="post">
+	<fieldset class="form-group">
+		<legend>Sobre o evento</legend>
+			<input class="form-control" name="nomeEvento" id="nomeEvento" type="text" placeholder="NOME DO EVENTO" title="Nome do evento" required/>
+			<input class="form-control" name="endereco" id="endereco" type="text" placeholder="ENDERE&Ccedil;O DO LOCAL" title="Endere&ccedil;o do local" required/>
+			<fieldset class="form-group">
+				<legend>DATA DO EVENTO</legend>
+				<input class="form-control" name="data" id="data" type="date" placeholder="DATA DO EVENTO" title="Data do evento" required/>
+			</fieldset>
+			<fieldset class="form-group">
+				<legend>HORA DE IN&Iacute;CIO (PREVISTA)</legend>
+				<input class="form-control" name="horaInicio" id="horaInicio" type="time" placeholder="HORA DE IN&Iacute;CIO (PREVISTA)" title="Hora de in&iacute;cio (prevista)" required/>
+			</fieldset>
+			<fieldset class="form-group">
+				<legend>HORA DE T&Eacute;RMINO (PREVISTA)</legend>
+				<input class="form-control" name="horaTermino" id="horaTermino" type="time" placeholder="HORA DE T&Eacute;RMINO (PREVISTA)" title="Hora de t&eacute;rmino (prevista)" required/>
+			</fieldset>
+			<input class="form-control" name="enderecoEletronico" id="enderecoEletronico" type="text" placeholder="ENDERE&Ccedil;O ELETR&Ocirc;NICO DO EVENTO (se houver - evento no Facebook, site, fanpage, etc.)" title="Endere&ccedil;o eletr&ocirc;nico do evento (se houver - evento no Facebook, site, fanpage, etc.)"/>
+			<input class="form-control"  name="nomeResponsavel" id="nomeResponsavel" type="text" placeholder="NOME DO RESPONS&Aacute;VEL" title="Nome do respons&aacute;vel" required/>
+			<input class="form-control"  name="telResponsavel" id="telResponsavel" type="tel" placeholder="TELEFONE DO RESPONS&Aacute;VEL" title="Telefone do respons&aacute;vel" required/>
+			<input class="form-control" name="emailResponsavel" id="emailResponsavel" type="email" placeholder="E-MAIL DO RESPONS&Aacute;VEL" title="E-mail do respons&aacute;vel" required/>
+			<textarea class="form-control" name="objetivo" id="objetivo" rows="3" placeholder="OBJETIVO (Breve resumo de como ser&aacute; evento)" title="Objetivo (breve resumo de como ser&aacute; evento)"></textarea>
+		</div>
+	</fieldset>
+	<fieldset class="form-group">
+		<legend>Sobre nossa participa&ccedil;&atilde;o</legend>
+			<input class="form-control" name="tempoDeApresentacao" id="tempoDeApresentacao" type="text" placeholder="QUANTIDADE DE M&Uacute;SICAS (OU TEMPO DISPON&Iacute;VEL)" title="Quantidade de m&uacute;sicas (ou tempo dispon&iacute;vel)" required/>
+			<textarea class="form-control" name="cronograma" id="cronograma" rows="3" placeholder="CRONOGRAMA DO EVENTO E ONDE ESTAR&Iacute;AMOS ENCAIXADOS" title="Cronograma do evento e onde estar&iacute;amos encaixados" required></textarea>
+			<fieldset class="from-group">
+				<legend>PASSAGEM DE SOM (hora)</legend>
+				<input class="form-control" name="passagemDeSom" id="passagemDeSom" type="time" placeholder="QUE HORAS PODEREMOS CHEGAR PARA PASSAR O SOM?" title="Que horas poderemos chegar para passar o som?" required/>
+			</fieldset>
+			<fieldset class="form-group">
+				<legend>ESTRUTURA DISPON&Iacute;VEL NO LOCAL</legend>
+				<p>Para sabermos se ser&aacute; necess&aacute;rio levarmos algum equipamento extra, por favor, marque abaixo os itens que encontram-se dispon&iacute;veis para utiliza&ccedil;&atilde;o no local do evento:</p><br/>
+				<div class="checkbox">
+					<input name="pedestais" id="pedestais" type="checkbox" value="Sim"/> Pedestais para microfones<br/>
+					<span>Quantos? <input class="form-control" name="pedestaisQtd" id="pedestaisQtd" type="text" title="Quantidade de pedestais dispon&iacute;veis"/></span>
+					<input name="microfones" id="microfones" type="checkbox" value="Sim"/> Microfones<br/>
+					<span>Quantos? <input class="form-control" name="microfonesQtd" id="microfonesQtd" type="text" title="Quantidade de microfones dispon&iacute;veis"/></span>
+					<input name="ampBaixo" id="ampBaixo" type="checkbox" value="Sim"/> Amplificador de contrabaixo<br/>
+					<input name="ampGuitarra" id="ampGuitarra" type="checkbox" value="Sim"/> Amplificador de guitarra<br/>
+					<input name="canalTeclado" id="canalTeclado" type="checkbox" value="Sim"/> Canal para teclado<br/>
+					<input name="canalViolao" id="canalViolao" type="checkbox" value="Sim"/> Canal para viol&atilde;o<br/>
+					<input name="bateria" id="bateria" type="checkbox" value="Sim"/> Bateria (bumbo, tambores e estantes de pratos)<br/>
+					<input name="pratosBateria" id="pratosBateria" type="checkbox" value="Sim"/> Pratos de bateria<br/>
+					<input name="caixaBateria" id="caixaBateria" type="checkbox" value="Sim"/> Caixa (tarol) de bateria<br/><br/>
+					<p>N&oacute;s levamos nossos instrumentos e cabos. Normalmente contamos com 4 vozes, 1 guitarra, 1 contrabaixo, 1 viol&atilde;o, 1 teclado e utilizamos a bateria do local. Caso haja algum item incompleto ou indispon&iacute;vel no local do evento, basta nos informar atrav&eacute;s deste campo de observa&ccedil;&otilde;es:</p>
+					<textarea class="form-control" name="obsEstrutura" id="obsEstrutura" rows="3" placeholder="OBSERVA&Ccedil;&Otilde;ES" title="Observa&ccedil;&otilde;es"></textarea>
 				</div>
 			</fieldset>
-			<fieldset>
-				<legend>Sobre nossa participa&ccedil;&atilde;o</legend>
-				<div class="div-form">
-					<input name="tempoDeApresentacao" id="tempoDeApresentacao" type="text" placeholder="QUANTIDADE DE M&Uacute;SICAS (OU TEMPO DISPON&Iacute;VEL)" title="Quantidade de m&uacute;sicas (ou tempo dispon&iacute;vel)" required/>
-					<textarea name="cronograma" id="cronograma" rows="3" placeholder="CRONOGRAMA DO EVENTO E ONDE ESTAR&Iacute;AMOS ENCAIXADOS" title="Cronograma do evento e onde estar&iacute;amos encaixados" required></textarea>
-					<fieldset class="fieldset-interno field-solitario">
-						<legend>PASSAGEM DE SOM (hora)</legend>
-						<input name="passagemDeSom" id="passagemDeSom" type="time" placeholder="QUE HORAS PODEREMOS CHEGAR PARA PASSAR O SOM?" title="Que horas poderemos chegar para passar o som?" required/>
-					</fieldset>
-					<fieldset class="fieldset-interno field-solitario">
-						<legend>ESTRUTURA DISPON&Iacute;VEL NO LOCAL</legend>
-						<p class="obs">Para sabermos se ser&aacute; necess&aacute;rio levarmos algum equipamento extra, por favor, marque abaixo os itens que encontram-se dispon&iacute;veis para utiliza&ccedil;&atilde;o no local do evento:</p><br/>
-						<div class="checkboxes">
-							<input name="pedestais" id="pedestais" type="checkbox" value="Sim"/> Pedestais para microfones<br/>
-							<span class="oculto">Quantos? <input name="pedestaisQtd" id="pedestaisQtd" type="text" title="Quantidade de pedestais dispon&iacute;veis"/></span>
-							<input name="microfones" id="microfones" type="checkbox" value="Sim"/> Microfones<br/>
-							<span class="oculto">Quantos? <input name="microfonesQtd" id="microfonesQtd" type="text" title="Quantidade de microfones dispon&iacute;veis"/></span>
-							<input name="ampBaixo" id="ampBaixo" type="checkbox" value="Sim"/> Amplificador de contrabaixo<br/>
-							<input name="ampGuitarra" id="ampGuitarra" type="checkbox" value="Sim"/> Amplificador de guitarra<br/>
-							<input name="canalTeclado" id="canalTeclado" type="checkbox" value="Sim"/> Canal para teclado<br/>
-							<input name="canalViolao" id="canalViolao" type="checkbox" value="Sim"/> Canal para viol&atilde;o<br/>
-							<input name="bateria" id="bateria" type="checkbox" value="Sim"/> Bateria (bumbo, tambores e estantes de pratos)<br/>
-							<input name="pratosBateria" id="pratosBateria" type="checkbox" value="Sim"/> Pratos de bateria<br/>
-							<input name="caixaBateria" id="caixaBateria" type="checkbox" value="Sim"/> Caixa (tarol) de bateria<br/><br/>
-							<p class="obs">N&oacute;s levamos nossos instrumentos e cabos. Normalmente contamos com 4 vozes, 1 guitarra, 1 contrabaixo, 1 viol&atilde;o, 1 teclado e utilizamos a bateria do local. Caso haja algum item incompleto ou indispon&iacute;vel no local do evento, basta nos informar atrav&eacute;s deste campo de observa&ccedil;&otilde;es:</p>
-							<textarea name="obsEstrutura" id="obsEstrutura" rows="3" placeholder="OBSERVA&Ccedil;&Otilde;ES" title="Observa&ccedil;&otilde;es"></textarea>
-						</div>
-					</fieldset>
-					<fieldset class="fieldset-interno field-solitario">
-						<legend>APOIO</legend>
-						<p class="obs">Para que possamos continuar levando reflex&otilde;es em forma de m&uacute;sica, n&oacute;s, como um projeto independente, contamos com o apoio de gente que acredita em nosso trabalho.</p>
-						<p class="obs"><strong>N&oacute;s n&atilde;o cobramos para tocar,</strong> no entanto, dependendo da dist&acirc;ncia e das necessidades do momento, podemos solicitar uma ajuda de custo para nosso transporte e a disponibiliza&ccedil;&atilde;o de lanche para nossa equipe (atualmente contamos com 8 pessoas).</p>
-						<p class="obs">Tamb&eacute;m como maneira de arrecadar recursos de maneira justa, dispomos de produtos (canecas, adesivos, etc.) para venda. Solicitamos a permiss&atilde;o para disponibilizar alguns de nossos produtos em seu evento. Por favor, clique na caixa de sele&ccedil;&atilde;o abaixo caso seja poss&iacute;vel essa veicula&ccedil;&atilde;o:</p>
-						<br/>
-						<div class="checkboxes">
-							<input name="aceiteVenda" id="aceiteVenda" type="checkbox" value="Sim"/> Autorizo a venda de material exclusivo do Distrito Alfa em local definido pelo organizador do evento, ao final ou durante a realiza&ccedil;&atilde;o do mesmo. Devendo assim acordarmos o melhor momento e maneira de anunciar a venda dos materiais para que nenhuma das partes seja prejudicada.<br/>
-						</div>
-				</div>
-			</fieldset>
-			<input type="submit" class="btn" value="ENVIAR"/><br/>
-		</form>
-		<p>"Porque dele e por ele, e para ele, s&atilde;o todas as coisas; gl&oacute;ria pois, a ele eternamente. Am&eacute;m" (Rm 11.36)</p>
-	</main>
-	<footer>
-		<p>contato<span class="destaque">{arroba}</span>distritoalfa.com.br<br/>(21) 99808-4476 / 97945-9067</p>
-		<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fdistritoalfa&amp;width=80&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=65" scrolling="no" allowtransparency="true"></iframe>
-	</footer>
-</body>
-</html>
+			<fieldset class="form-group">
+				<legend>APOIO</legend>
+				<p>Para que possamos continuar levando reflex&otilde;es em forma de m&uacute;sica, n&oacute;s, como um projeto independente, contamos com o apoio de gente que acredita em nosso trabalho.</p>
+				<p><strong>N&oacute;s n&atilde;o cobramos para tocar,</strong> no entanto, dependendo da dist&acirc;ncia e das necessidades do momento, podemos solicitar uma ajuda de custo para nosso transporte e a disponibiliza&ccedil;&atilde;o de lanche para nossa equipe (atualmente contamos com 8 pessoas).</p>
+			</div>
+		</fieldset>
+		<input class="btn btn-lg btn-warning" type="submit" class="btn" value="ENVIAR"/><br/>
+	</form>
+	<p>"Porque dele e por ele, e para ele, s&atilde;o todas as coisas; gl&oacute;ria pois, a ele eternamente. Am&eacute;m" (Rm 11.36)</p>
