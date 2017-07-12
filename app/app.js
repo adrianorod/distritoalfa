@@ -19,6 +19,11 @@
           templateUrl:"app/views/midias.html",
           controller:"midiasController",
           controllerAs:"vm"
+        })
+        .when('/agradecimentos',{
+          templateUrl:"app/views/agradecimentos.html",
+          controller:"agradecimentosController",
+          controllerAs:"vm"
         });
       $routeProvider.otherwise({redirectTo: "/"});
     });
