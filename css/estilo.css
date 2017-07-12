@@ -265,6 +265,9 @@ legend {
   letter-spacing: 2px;
 }
 
+.clear {
+  clear: both;
+}
 /* animations */
 
 @keyframes fadein {

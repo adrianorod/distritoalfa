@@ -22,7 +22,7 @@
 			<legend class="legend-destaque2">T&eacute;rmino</legend>
 			<input class="form-control" name="horaTermino" id="horaTermino" type="time" placeholder="HORA DE T&Eacute;RMINO (PREVISTA)" title="Hora de t&eacute;rmino (prevista)" required/>
 		</fieldset>
-		<div class="form-group col-sm-12">
+		<div class="form-group col-sm-12 clear">
 			<input class="form-control" name="enderecoEletronico" id="enderecoEletronico" type="text" placeholder="ENDERE&Ccedil;O ELETR&Ocirc;NICO DO EVENTO (se houver - evento no Facebook, site, fanpage, etc.)" title="Endere&ccedil;o eletr&ocirc;nico do evento (se houver - evento no Facebook, site, fanpage, etc.)"/>
 		</div>
 		<div class="form-group col-sm-4">
@@ -34,7 +34,7 @@
 		<div class="form-group col-sm-4">
 			<input class="form-control" name="emailResponsavel" id="emailResponsavel" type="email" placeholder="E-MAIL DO RESPONS&Aacute;VEL" title="E-mail do respons&aacute;vel" required/>
 		</div>
-		<div class="form-group col-sm-12">
+		<div class="form-group col-sm-12 clear">
 			<textarea class="form-control" name="objetivo" id="objetivo" rows="3" placeholder="OBJETIVO (Breve resumo de como ser&aacute; evento)" title="Objetivo (breve resumo de como ser&aacute; evento)"></textarea>
 		</div>
 	</fieldset>
@@ -48,22 +48,22 @@
 			<legend class="legend-destaque2">Passagem de som</legend>
 			<input class="form-control" name="passagemDeSom" id="passagemDeSom" type="time" placeholder="HORA DA PASSAGEM DE SOM" title="Hora da passagem de som" required/><br/>
 		</fieldset>
-		<div class="form-group col-sm-12">
+		<div class="form-group col-sm-12 clear">
 			<textarea class="form-control" name="cronograma" id="cronograma" rows="3" placeholder="CRONOGRAMA DO EVENTO E ONDE ESTAR&Iacute;AMOS ENCAIXADOS" title="Cronograma do evento e onde estar&iacute;amos encaixados" required></textarea>
 		</div>
 	</fieldset>
 	<fieldset>
 		<legend class="legend-destaque1">Estrutura disponível no local</legend>
 		<p>Para sabermos se ser&aacute; necess&aacute;rio levarmos algum equipamento extra, por favor, marque abaixo os itens que encontram-se dispon&iacute;veis para utiliza&ccedil;&atilde;o no local do evento:</p>
-		<div class="form-group col-xs-6">
-			<label for="microfonesQtd">Microfones</label>
+		<fieldset class="form-group col-xs-6">
+			<legend class="legend-destaque2">Microfones</legend>
 			<input class="form-control" name="microfonesQtd" id="microfonesQtd" type="text" placeholder="MICROFONES NO LOCAL" title="Quantidade de microfones dispon&iacute;veis"/>
-		</div>
-		<div class="form-group col-xs-6">
-			<label for="pedestaisQtd">Pedestais p/ mic's</label>
+		</fieldset>
+		<fieldset class="form-group col-xs-6">
+			<legend class="legend-destaque2">Pedestais p/ mic's</legend>
 			<input class="form-control" name="pedestaisQtd" id="pedestaisQtd" type="text" placeholder="PEDESTAIS NO LOCAL" title="Quantidade de pedestais dispon&iacute;veis"/>
-		</div>
-		<div class="checkbox">
+		</fieldset>
+		<div class="checkbox clear">
 			<label>
 				<input name="ampBaixo" id="ampBaixo" type="checkbox" value="Sim"/> <strong>Amplificador de contrabaixo</strong>
 			</label>
