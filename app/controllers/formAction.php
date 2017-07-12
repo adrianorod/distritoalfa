@@ -68,7 +68,7 @@
 			</head>
 			<body>
 				<script>
-					location.href=\"../index.html#/agradecimentos\"
+					location.href=\"../../index.html#/agradecimentos\"
 				</script>
 			</body>
       </html>";
