@@ -163,6 +163,7 @@ body {
 }
 
 /* others */
+
 .destaque {
   color: #ff9900;
 }
@@ -246,11 +247,6 @@ h2 {
   margin: 30px;
 }
 
-.vertical-center {
-  display: table-cell;
-  vertical-align: middle;
-}
-
 .legend-destaque1 {
   color: #ff9900;
   font-size: 1.3em;
@@ -268,6 +264,31 @@ legend {
 .clear {
   clear: both;
 }
+
+@media (max-width: 495px) {
+  .masthead-nav {
+    clear: both;
+    margin-top: 20px;
+    float: inherit;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -40px;
+  }
+  #redessociais {
+    clear: both;
+    float: inherit;
+    width: 128px;
+    height: 28px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -15px;
+  }
+  .youtube {
+    width: 320px;
+    height: 180px;
+  }
+}
+
 /* animations */
 
 @keyframes fadein {
