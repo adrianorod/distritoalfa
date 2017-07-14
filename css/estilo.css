@@ -288,7 +288,18 @@ legend {
     height: 180px;
   }
 }
-
+@media (max-width: 370px) {
+  .youtube {
+    width: 280px;
+    height: 158px;
+  }
+  .inner {
+    padding: 5px;
+  }
+  #redessociais {
+    margin-top: 0;
+  }
+}
 /* animations */
 
 @keyframes fadein {
