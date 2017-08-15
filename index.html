@@ -10,7 +10,7 @@
 
     <title>Distrito Alfa - Vida, simplicidade e m&uacute;sica</title>
 
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="img/favicon.png">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilo.css" rel="stylesheet">
 
@@ -24,6 +24,13 @@
           <div class="masthead clearfix">
             <div class="inner">
 
+              <div id="redessociais">
+                <a class="facebook" href="https://facebook.com/distritoalfa" target="_blank">&nbsp;</a>
+                <a class="instagram" href="https://instagram.com/distritoalfa" target="_blank">&nbsp;</a>
+                <a class="twitter" href="https://twitter.com/distritoalfa" target="_blank">&nbsp;;</a>
+                <a class="youtube" href="https://www.youtube.com/user/distritoalfa?sub_confirmation=1" target="_blank">&nbsp;</a>
+              </div>
+
               <nav>
                 <ul class="nav masthead-nav">
                   <li ng-class="{active: activetab == '/'}"><a href="#">Home</a></li>
@@ -32,7 +39,7 @@
                 </ul>
               </nav>
 
-              <h1 class="masthead-brand">Distrito Alfa <small>Vida, simplicidade e m&uacute;sica</small></h1>
+              <h1 id="logo"><span>Distrito Alfa - Vida, simplicidade e m&uacute;sica</span></h1>
 
             </div>
           </div>
@@ -43,7 +50,7 @@
           </div>
           <div class="mastfoot">
             <div class="inner">
-              <p>contato<span class="destaque">{&#64;}</span>distritoalfa.com.br<br/><span class="destaque">(21)</span> 97945-9067 / 98583-9114</p>
+              <p>contato<span class="destaque">{&#64;}</span>distritoalfa.com.br<br/><span class="destaque">(21)</span> 97945-9067 / <span class="destaque">(21)</span> 98583-9114</p>
             </div>
           </div>
         </div>
@@ -58,6 +65,7 @@
     <script src="app/controllers/homeController.js"></script>
     <script src="app/controllers/convitesController.js"></script>
     <script src="app/controllers/midiasController.js"></script>
+    <script src="app/controllers/agradecimentosController.js"></script>
 
   </body>
 
