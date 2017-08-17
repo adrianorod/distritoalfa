@@ -5,9 +5,15 @@
     .module('distritoalfa')
     .controller('convitesController', convitesController);
 
-  function convitesController($rootScope, $location) {
+  function convitesController($document) {
     /* jshint validthis: true*/
     var vm = this;
-    $rootScope.activetab = $location.path();
+
+    vm.enviar = enviar;
+
+    function enviar() {
+      angular.element($document[0].querySelector('input.ng-invalid')).focus();
+    }
+
   }
 })();
