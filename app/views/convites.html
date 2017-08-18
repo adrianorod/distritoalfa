@@ -1,7 +1,7 @@
 <h2>Convites</h2>
 <p>Preencha o formul&aacute;rio abaixo com os dados a respeito do evento. Lhe responderemos em breve!</p>
 <p>Caso voc&ecirc; tenha alguma d&uacute;vida ou dificuldade, por favor, entre em contato para conversarmos. Voc&ecirc; consegue nos encontrar no e-mail <strong>contato<span class="destaque">{&#64;}</span>distritoalfa.com.br</strong> e nos telefones <strong>(21) 97945-9067</strong> e <strong>(21) 98583-9114</strong>.</p>
-<form name="formConvite" ng-submit="vm.enviar()" novalidate>
+<form name="formConvite" novalidate>
 	<fieldset>
 		<legend class="legend-destaque1">Sobre o evento</legend>
 		<div class="form-group col-sm-6">
@@ -24,8 +24,11 @@
 			<legend class="legend-destaque2">Data</legend>
 			<input class="form-control" name="data" type="date" placeholder="DATA DO EVENTO" title="Data do evento" ng-model="vm.convite.data" required/>
 			<span ng-show="formConvite.$submitted || formConvite.data.$touched">
-				<span ng-show="formConvite.data.$error" class="form-control alert-danger">
+				<span ng-show="formConvite.data.$error.required" class="form-control alert-danger">
 					Digite uma data v&aacute;lida
+				</span>
+				<span ng-show="formConvite.data.$error.date" class="form-control alert-danger">
+					O formato deve ser AAAA-MM-DD
 				</span>
 			</span>
 		</fieldset>
@@ -33,8 +36,11 @@
 			<legend class="legend-destaque2">In&iacute;cio</legend>
 			<input class="form-control" name="horaInicio" type="time" placeholder="HORA DE IN&Iacute;CIO (PREVISTA)" title="Hora de in&iacute;cio (prevista)" ng-model="vm.convite.horaInicio" required/>
 			<span ng-show="formConvite.$submitted || formConvite.horaInicio.$touched">
-				<span ng-show="formConvite.horaInicio.$error" class="form-control alert-danger">
+				<span ng-show="formConvite.horaInicio.$error.required" class="form-control alert-danger">
 					Digite uma hora v&aacute;lida
+				</span>
+				<span ng-show="formConvite.horaInicio.$error.time" class="form-control alert-danger">
+					O formato deve ser hh:mm
 				</span>
 			</span>
 		</fieldset>
@@ -42,8 +48,11 @@
 			<legend class="legend-destaque2">T&eacute;rmino</legend>
 			<input class="form-control" name="horaTermino" type="time" placeholder="HORA DE T&Eacute;RMINO (PREVISTA)" title="Hora de t&eacute;rmino (prevista)" ng-model="vm.convite.horaTermino" required/>
 			<span ng-show="formConvite.$submitted || formConvite.horaTermino.$touched">
-				<span ng-show="formConvite.horaTermino.$error" class="form-control alert-danger">
+				<span ng-show="formConvite.horaTermino.$error.required" class="form-control alert-danger">
 					Digite uma hora v&aacute;lida
+				</span>
+				<span ng-show="formConvite.horaTermino.$error.time" class="form-control alert-danger">
+					O formato deve ser hh:mm
 				</span>
 			</span>
 		</fieldset>
@@ -61,7 +70,7 @@
 		<div class="form-group col-sm-4">
 			<input class="form-control"  name="telResponsavel" type="tel" placeholder="TELEFONE DO RESPONS&Aacute;VEL" title="Telefone do respons&aacute;vel" ng-model="vm.convite.telResponsavel" required/>
 			<span ng-show="formConvite.$submitted || formConvite.telResponsavel.$touched">
-				<span ng-show="formConvite.telResponsavel.$error" class="form-control alert-danger">
+				<span ng-show="formConvite.telResponsavel.$error.required" class="form-control alert-danger">
 					Digite um telefone v&aacute;lido
 				</span>
 			</span>
@@ -69,7 +78,7 @@
 		<div class="form-group col-sm-4">
 			<input class="form-control" name="emailResponsavel" type="email" placeholder="E-MAIL DO RESPONS&Aacute;VEL" title="E-mail do respons&aacute;vel" ng-model="vm.convite.emailResponsavel" required/>
 			<span ng-show="formConvite.$submitted || formConvite.emailResponsavel.$touched">
-				<span ng-show="formConvite.emailResponsavel.$error" class="form-control alert-danger">
+				<span ng-show="formConvite.emailResponsavel.$error.required || formConvite.emailResponsavel.$error.email" class="form-control alert-danger">
 					Digite um e-mail v&aacute;lido
 				</span>
 			</span>
@@ -93,13 +102,16 @@
 			<legend class="legend-destaque2">Passagem de som</legend>
 			<input class="form-control" name="passagemDeSom" type="time" placeholder="HORA DA PASSAGEM DE SOM" title="Hora da passagem de som" ng-model="vm.convite.passagemDeSom" required/>
 			<span ng-show="formConvite.$submitted || formConvite.passagemDeSom.$touched">
-				<span ng-show="formConvite.passagemDeSom.$error" class="form-control alert-danger">
+				<span ng-show="formConvite.passagemDeSom.$error.required" class="form-control alert-danger">
 					Digite um valor v&aacute;lido
+				</span>
+				<span ng-show="formConvite.passagemDeSom.$error.time" class="form-control alert-danger">
+					O formato deve ser hh:mm
 				</span>
 			</span>
 		</fieldset>
 		<div class="form-group col-sm-12 clear">
-			<textarea class="form-control" name="cronograma" rows="3" placeholder="CRONOGRAMA DO EVENTO E ONDE ESTAR&Iacute;AMOS ENCAIXADOS" title="Cronograma do evento e onde estar&iacute;amos encaixados" ng-model="vm.convite.cronograma" required></textarea>
+			<br /><textarea class="form-control" name="cronograma" rows="3" placeholder="CRONOGRAMA DO EVENTO E ONDE ESTAR&Iacute;AMOS ENCAIXADOS" title="Cronograma do evento e onde estar&iacute;amos encaixados" ng-model="vm.convite.cronograma" required></textarea>
 			<span ng-show="formConvite.$submitted || formConvite.cronograma.$touched">
 				<span ng-show="formConvite.cronograma.$error.required" class="form-control alert-danger">
 					Digite um valor v&aacute;lido
@@ -158,12 +170,44 @@
 			<textarea class="form-control" name="obsEstrutura" id="obsEstrutura" rows="3" placeholder="OBSERVA&Ccedil;&Otilde;ES" title="Observa&ccedil;&otilde;es" ng-model="vm.convite.obsEstrutura"></textarea>
 		</div>
 	</fieldset>
-	<fieldset class="form-group">
-		<legend class="legend-destaque1">Apoio</legend>
-		<p>Para que possamos continuar levando reflex&otilde;es em forma de m&uacute;sica, n&oacute;s, como um projeto independente, contamos com o apoio de gente que acredita em nosso trabalho.</p>
-		<p><strong>N&oacute;s n&atilde;o cobramos para tocar,</strong> no entanto, dependendo da dist&acirc;ncia e das necessidades do momento, podemos solicitar uma ajuda de custo para nosso transporte e a disponibiliza&ccedil;&atilde;o de lanche para nossa equipe (atualmente contamos com 8 pessoas).</p>
-	</fieldset>
-	<input class="btn btn-lg btn-warning" type="submit" value="ENVIAR"/><br/>
+	<button class="btn btn-lg btn-warning" ng-click="vm.validar(formConvite)">ENVIAR</button>
+	<!-- modal AVISO -->
+	<div class="modal fade" id="apoio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title legend-destaque1">APOIO</h4>
+	      </div>
+	      <div class="modal-body">
+					<p>Para que possamos continuar levando reflex&otilde;es em forma de m&uacute;sica, n&oacute;s, como um projeto independente, contamos com o apoio de gente que acredita em nosso trabalho.</p>
+					<p><strong>N&oacute;s n&atilde;o cobramos para tocar,</strong> no entanto, dependendo da dist&acirc;ncia e das necessidades do momento, podemos solicitar uma ajuda de custo para nosso transporte e a disponibiliza&ccedil;&atilde;o de lanche para nossa equipe (atualmente contamos com 8 pessoas).</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Voltar</button>
+	        <button type="button" class="btn btn-warning" ng-click="vm.enviar(formConvite,vm.convite)">CONFIRMAR</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- modal AVISO -->
+	<!-- modal CONFIRMAÇÃO -->
+	<div class="modal fade" id="confirmacao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					Agradecemos pelo convite! Nossa equipe confirmará a agenda e retornará o contato em breve. Em caso de dúvidas, você pode nos contatar por telefone ou por e-mail.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" ng-click="vm.redirecionando('index.html')">Retornar &agrave; p&aacute;gina inicial</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal CONFIRMAÇÃO -->
 </form>
 <br /><br />
 <em>"Porque dele e por ele, e para ele, s&atilde;o todas as coisas; gl&oacute;ria pois, a ele eternamente. Am&eacute;m" (Rm 11.36)</em>

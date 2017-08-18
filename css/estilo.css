@@ -9,17 +9,6 @@ a:hover {
   color: #333;
 }
 
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #000;
-  border: 1px solid #000;
-}
-
-
 /*
  * Base structure
  */

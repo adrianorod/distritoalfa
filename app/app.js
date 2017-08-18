@@ -22,12 +22,6 @@
           controller:"midiasController",
           controllerAs:"vm"
         });
-
-      $routeProvider.when('/agradecimentos',{
-          templateUrl:"app/views/agradecimentos.html",
-          controller:"agradecimentosController",
-          controllerAs:"vm"
-        });
         
       $routeProvider.otherwise({redirectTo: "/"});
 
