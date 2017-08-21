@@ -21,12 +21,18 @@
 
     vm.enviar = enviar;
     function enviar(formConvite,formulario) {
-      console.log(formulario);
-      angular.element($document[0].querySelector('#apoio')).modal('hide');
-      angular.element($document[0].querySelector('#confirmacao')).modal('show');
-      vm.convite = {};
-      formConvite.$setUntouched();
-      formConvite.$setPristine();
+      $http.post('php/post.php', formulario)
+				.success(function() {
+          console.log(formulario);
+          angular.element($document[0].querySelector('#apoio')).modal('hide');
+          angular.element($document[0].querySelector('#confirmacao')).modal('show');
+          vm.convite = {};
+          formConvite.$setUntouched();
+          formConvite.$setPristine();
+        })
+        .error(function(erro) {
+					console.log(erro);
+				});
     }
 
     vm.redirecionando = redirecionando;
