@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="distritoalfa">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projeto independente que leva arte em forma de m&uacute;sicas e reflex&otilde;es.">
+
+    <title>Distrito Alfa - Vida, simplicidade e m&uacute;sica</title>
+
+    <link rel="icon" href="img/favicon.png">
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="contGeral">
+      <div class="contInterno">
+        <div class="masthead clearfix">
+          <div id="redessociais">
+            <a class="facebook" href="https://facebook.com/distritoalfa" target="_blank">&nbsp;</a>
+            <a class="instagram" href="https://instagram.com/distritoalfa" target="_blank">&nbsp;</a>
+            <a class="twitter" href="https://twitter.com/distritoalfa" target="_blank">&nbsp;;</a>
+            <a class="youtube" href="https://www.youtube.com/user/distritoalfa?sub_confirmation=1" target="_blank">&nbsp;</a>
+          </div>
+
+          <nav>
+            <ul class="nav masthead-nav">
+              <li ng-class="{active: activetab == '/'}"><a href="#">Home</a></li>
+              <li ng-class="{active: activetab == '/convites'}"><a href="#/convites">Convites</a></li>
+              <li ng-class="{active: activetab == '/midias'}"><a href="#/midias">M&iacute;dias</a></li>
+            </ul>
+          </nav>
+
+          <h1 id="logo"><span>Distrito Alfa - Vida, simplicidade e m&uacute;sica</span></h1>
+
+        </div>
+
+        <div class="inner cover">
+          <div ng-view></div>
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>contato<span class="destaque">{&#64;}</span>distritoalfa.com.br<br/><span class="destaque">(21)</span> 97945-9067 / <span class="destaque">(21)</span> 98583-9114</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/js/controllers/homeController.js"></script>
+    <script src="app/js/controllers/convitesController.js"></script>
+    <script src="app/js/controllers/midiasController.js"></script>
+
+  </body>
+
+</html>
