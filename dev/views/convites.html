@@ -87,6 +87,91 @@
 			<textarea class="form-control" name="objetivo" rows="3" placeholder="OBJETIVO (Breve resumo de como ser&aacute; evento)" title="Objetivo (breve resumo de como ser&aacute; evento)" ng-model="vm.convite.objetivo"></textarea>
 		</div>
 	</fieldset>
+	<fieldset>
+		<legend class="legend-destaque">Sobre o evento</legend>
+		<div class="form-group col-sm-6">
+			<input class="form-control" name="nomeEvento" type="text" placeholder="NOME DO EVENTO" title="Nome do evento" ng-model="vm.convite.nomeEvento" required/>
+			<span ng-show="formConvite.$submitted || formConvite.nomeEvento.$touched">
+				<span ng-show="formConvite.nomeEvento.$error.required" class="form-control alert-danger">
+					Digite um nome v&aacute;lido
+				</span>
+			</span>
+		</div>
+		<div class="form-group col-sm-6">
+			<input class="form-control" name="endereco" type="text" placeholder="ENDERE&Ccedil;O DO LOCAL" title="Endere&ccedil;o do local" ng-model="vm.convite.endereco" required/>
+			<span ng-show="formConvite.$submitted || formConvite.endereco.$touched">
+				<span ng-show="formConvite.endereco.$error.required" class="form-control alert-danger">
+					Digite um endere&ccedil;o v&aacute;lido
+				</span>
+			</span>
+		</div>
+		<fieldset class="form-group col-sm-4 clear">
+			<legend>Data</legend>
+			<input class="form-control" name="data" type="date" placeholder="DATA DO EVENTO" title="Data do evento" ng-model="vm.convite.data" required/>
+			<span ng-show="formConvite.$submitted || formConvite.data.$touched">
+				<span ng-show="formConvite.data.$error.required" class="form-control alert-danger">
+					Digite uma data v&aacute;lida
+				</span>
+				<span ng-show="formConvite.data.$error.date" class="form-control alert-danger">
+					O formato deve ser AAAA-MM-DD
+				</span>
+			</span>
+		</fieldset>
+		<fieldset class="form-group col-xs-6 col-sm-4">
+			<legend>In&iacute;cio</legend>
+			<input class="form-control" name="horaInicio" type="time" placeholder="HORA DE IN&Iacute;CIO (PREVISTA)" title="Hora de in&iacute;cio (prevista)" ng-model="vm.convite.horaInicio" required/>
+			<span ng-show="formConvite.$submitted || formConvite.horaInicio.$touched">
+				<span ng-show="formConvite.horaInicio.$error.required" class="form-control alert-danger">
+					Digite uma hora v&aacute;lida
+				</span>
+				<span ng-show="formConvite.horaInicio.$error.time" class="form-control alert-danger">
+					O formato deve ser hh:mm
+				</span>
+			</span>
+		</fieldset>
+		<fieldset class="form-group col-xs-6 col-sm-4">
+			<legend>T&eacute;rmino</legend>
+			<input class="form-control" name="horaTermino" type="time" placeholder="HORA DE T&Eacute;RMINO (PREVISTA)" title="Hora de t&eacute;rmino (prevista)" ng-model="vm.convite.horaTermino" required/>
+			<span ng-show="formConvite.$submitted || formConvite.horaTermino.$touched">
+				<span ng-show="formConvite.horaTermino.$error.required" class="form-control alert-danger">
+					Digite uma hora v&aacute;lida
+				</span>
+				<span ng-show="formConvite.horaTermino.$error.time" class="form-control alert-danger">
+					O formato deve ser hh:mm
+				</span>
+			</span>
+		</fieldset>
+		<div class="form-group col-sm-12 clear">
+			<input class="form-control" name="enderecoEletronico" type="text" placeholder="ENDERE&Ccedil;O ELETR&Ocirc;NICO DO EVENTO (se houver - evento no Facebook, site, fanpage, etc.)" title="Endere&ccedil;o eletr&ocirc;nico do evento (se houver - evento no Facebook, site, fanpage, etc.)" ng-model="vm.convite.enderecoEletronico"/>
+		</div>
+		<div class="form-group col-sm-4">
+			<input class="form-control"  name="nomeResponsavel" type="text" placeholder="NOME DO RESPONS&Aacute;VEL" title="Nome do respons&aacute;vel" ng-model="vm.convite.nomeResponsavel" required/>
+			<span ng-show="formConvite.$submitted || formConvite.nomeResponsavel.$touched">
+				<span ng-show="formConvite.nomeResponsavel.$error.required" class="form-control alert-danger">
+					Digite um nome v&aacute;lido
+				</span>
+			</span>
+		</div>
+		<div class="form-group col-sm-4">
+			<input class="form-control"  name="telResponsavel" type="tel" placeholder="TELEFONE DO RESPONS&Aacute;VEL" title="Telefone do respons&aacute;vel" ng-model="vm.convite.telResponsavel" required/>
+			<span ng-show="formConvite.$submitted || formConvite.telResponsavel.$touched">
+				<span ng-show="formConvite.telResponsavel.$error.required" class="form-control alert-danger">
+					Digite um telefone v&aacute;lido
+				</span>
+			</span>
+		</div>
+		<div class="form-group col-sm-4">
+			<input class="form-control" name="emailResponsavel" type="email" placeholder="E-MAIL DO RESPONS&Aacute;VEL" title="E-mail do respons&aacute;vel" ng-model="vm.convite.emailResponsavel" required/>
+			<span ng-show="formConvite.$submitted || formConvite.emailResponsavel.$touched">
+				<span ng-show="formConvite.emailResponsavel.$error.required || formConvite.emailResponsavel.$error.email" class="form-control alert-danger">
+					Digite um e-mail v&aacute;lido
+				</span>
+			</span>
+		</div>
+		<div class="form-group col-sm-12 clear">
+			<textarea class="form-control" name="objetivo" rows="3" placeholder="OBJETIVO (Breve resumo de como ser&aacute; evento)" title="Objetivo (breve resumo de como ser&aacute; evento)" ng-model="vm.convite.objetivo"></textarea>
+		</div>
+	</fieldset>
 	<fieldset class="form-group">
 		<legend class="legend-destaque">Sobre nossa participa&ccedil;&atilde;o</legend>
 		<fieldset class="from-group col-sm-6">

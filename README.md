@@ -2,7 +2,7 @@ Projeto PT-BR que contempla o site da banda Distrito Alfa (http://distritoalfa.c
 
 - HTML5
 - Bootstrap
-- Css / Sass
+- CSS / Sass
 - Angular
 - JQuery
 - PHP
