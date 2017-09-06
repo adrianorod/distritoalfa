@@ -3,7 +3,7 @@
 <p>Caso voc&ecirc; tenha alguma d&uacute;vida ou dificuldade, por favor, entre em contato para conversarmos. Voc&ecirc; consegue nos encontrar no e-mail <strong>contato<span class="destaque">{&#64;}</span>distritoalfa.com.br</strong> e nos telefones <strong>(21) 97945-9067</strong> e <strong>(21) 98583-9114</strong>.</p>
 <form name="formConvite" novalidate>
 	<fieldset>
-		<legend class="legend-destaque1">Sobre o evento</legend>
+		<legend class="legend-destaque">Sobre o evento</legend>
 		<div class="form-group col-sm-6">
 			<input class="form-control" name="nomeEvento" type="text" placeholder="NOME DO EVENTO" title="Nome do evento" ng-model="vm.convite.nomeEvento" required/>
 			<span ng-show="formConvite.$submitted || formConvite.nomeEvento.$touched">
@@ -21,7 +21,7 @@
 			</span>
 		</div>
 		<fieldset class="form-group col-sm-4 clear">
-			<legend class="legend-destaque2">Data</legend>
+			<legend>Data</legend>
 			<input class="form-control" name="data" type="date" placeholder="DATA DO EVENTO" title="Data do evento" ng-model="vm.convite.data" required/>
 			<span ng-show="formConvite.$submitted || formConvite.data.$touched">
 				<span ng-show="formConvite.data.$error.required" class="form-control alert-danger">
@@ -33,7 +33,7 @@
 			</span>
 		</fieldset>
 		<fieldset class="form-group col-xs-6 col-sm-4">
-			<legend class="legend-destaque2">In&iacute;cio</legend>
+			<legend>In&iacute;cio</legend>
 			<input class="form-control" name="horaInicio" type="time" placeholder="HORA DE IN&Iacute;CIO (PREVISTA)" title="Hora de in&iacute;cio (prevista)" ng-model="vm.convite.horaInicio" required/>
 			<span ng-show="formConvite.$submitted || formConvite.horaInicio.$touched">
 				<span ng-show="formConvite.horaInicio.$error.required" class="form-control alert-danger">
@@ -45,7 +45,7 @@
 			</span>
 		</fieldset>
 		<fieldset class="form-group col-xs-6 col-sm-4">
-			<legend class="legend-destaque2">T&eacute;rmino</legend>
+			<legend>T&eacute;rmino</legend>
 			<input class="form-control" name="horaTermino" type="time" placeholder="HORA DE T&Eacute;RMINO (PREVISTA)" title="Hora de t&eacute;rmino (prevista)" ng-model="vm.convite.horaTermino" required/>
 			<span ng-show="formConvite.$submitted || formConvite.horaTermino.$touched">
 				<span ng-show="formConvite.horaTermino.$error.required" class="form-control alert-danger">
@@ -88,9 +88,9 @@
 		</div>
 	</fieldset>
 	<fieldset class="form-group">
-		<legend class="legend-destaque1">Sobre nossa participa&ccedil;&atilde;o</legend>
+		<legend class="legend-destaque">Sobre nossa participa&ccedil;&atilde;o</legend>
 		<fieldset class="from-group col-sm-6">
-			<legend class="legend-destaque2">Tempo de apresentação</legend>
+			<legend>Tempo de apresentação</legend>
 			<input class="form-control" name="tempoDeApresentacao" type="text" placeholder="QUANTIDADE DE M&Uacute;SICAS OU TEMPO DISPON&Iacute;VEL" title="Quantidade de m&uacute;sicas (ou tempo dispon&iacute;vel)" ng-model="vm.convite.tempoDeApresentacao" required/>
 			<span ng-show="formConvite.$submitted || formConvite.tempoDeApresentacao.$touched">
 				<span ng-show="formConvite.tempoDeApresentacao.$error.required" class="form-control alert-danger">
@@ -99,7 +99,7 @@
 			</span>
 		</fieldset>
 		<fieldset class="from-group col-sm-6">
-			<legend class="legend-destaque2">Passagem de som</legend>
+			<legend>Passagem de som</legend>
 			<input class="form-control" name="passagemDeSom" type="time" placeholder="HORA DA PASSAGEM DE SOM" title="Hora da passagem de som" ng-model="vm.convite.passagemDeSom" required/>
 			<span ng-show="formConvite.$submitted || formConvite.passagemDeSom.$touched">
 				<span ng-show="formConvite.passagemDeSom.$error.required" class="form-control alert-danger">
@@ -120,14 +120,14 @@
 		</div>
 	</fieldset>
 	<fieldset>
-		<legend class="legend-destaque1">Estrutura disponível no local</legend>
+		<legend class="legend-destaque">Estrutura disponível no local</legend>
 		<p>Para sabermos se ser&aacute; necess&aacute;rio levarmos algum equipamento extra, por favor, marque abaixo os itens que encontram-se dispon&iacute;veis para utiliza&ccedil;&atilde;o no local do evento:</p>
 		<fieldset class="form-group col-sm-6">
-			<legend class="legend-destaque2">Microfones</legend>
+			<legend>Microfones</legend>
 			<input class="form-control" name="microfonesQtd" type="number" placeholder="MICROFONES NO LOCAL" title="Quantidade de microfones dispon&iacute;veis" ng-model="vm.convite.microfonesQtd"/>
 		</fieldset>
 		<fieldset class="form-group col-sm-6">
-			<legend class="legend-destaque2">Pedestais p/ mic's</legend>
+			<legend>Pedestais p/ mic's</legend>
 			<input class="form-control" name="pedestaisQtd" type="number" placeholder="PEDESTAIS NO LOCAL" title="Quantidade de pedestais dispon&iacute;veis" ng-model="vm.convite.pedestaisQtd"/>
 		</fieldset>
 		<div class="checkbox clear">
@@ -177,7 +177,7 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title legend-destaque1">APOIO</h4>
+	        <h4 class="modal-title legend-destaque">APOIO</h4>
 	      </div>
 	      <div class="modal-body">
 					<p>Para que possamos continuar levando reflex&otilde;es em forma de m&uacute;sica, n&oacute;s, como um projeto independente, contamos com o apoio de gente que acredita em nosso trabalho.</p>

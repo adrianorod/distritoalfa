@@ -1,1 +1,8 @@
-// mixins do projeto
+@mixin redessociais-background-change {
+  background-position: 0 28px;
+}
+
+@mixin uppercasing {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

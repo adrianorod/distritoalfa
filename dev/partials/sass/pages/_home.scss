@@ -1,6 +1,13 @@
-.youtube
-{
+.youtube {
   width: 450px;
   height: 253px;
   float: inherit;
+  @media #{$mq-medium} {
+    width: 320px;
+    height: 180px;
+  }
+  @media #{$mq-small} {
+    width: 280px;
+    height: 158px;
+  }
 }

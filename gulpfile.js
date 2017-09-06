@@ -29,7 +29,7 @@ gulp.task('default', ['server', 'watch']);
 gulp.task('sass-compile', function() {
   return gulp.src('./dev/partials/sass/main.scss')
     .pipe(sass()).on('error', sass.logError)
-    .pipe(minifyCss())
+//    .pipe(minifyCss())
     .pipe(gulp.dest('./dev/css/'));
 });
 

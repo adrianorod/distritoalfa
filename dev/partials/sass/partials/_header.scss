@@ -1,68 +1,62 @@
-
 #redessociais {
   float: left;
-}
-
-#redessociais a {
-  margin-right: 3px;
-  display: block;
-  width: 29px;
+  width: 128px;
   height: 28px;
-  float: left;
+  margin-right: auto;
+  margin-left: auto;
+  a {
+    margin-right: 3px;
+    display: block;
+    width: 29px;
+    height: 28px;
+    float: left;
+    text-decoration: none;
+  }
+  .facebook {
+    background-image: url('../img/socialFacebook.png');
+    &:hover {
+      @include redessociais-background-change;
+    }
+  }
+  .instagram {
+    background-image: url('../img/socialInstagram.png');
+    &:hover {
+      @include redessociais-background-change;
+    }
+  }
+  .twitter {
+    background-image: url('../img/socialTwitter.png');
+    &:hover {
+      @include redessociais-background-change;
+    }
+  }
+  .youtube {
+    background-image: url('../img/socialYouTube.png');
+    &:hover {
+      @include redessociais-background-change;
+    }
+  }
+  @media #{$mq-medium} {
+    clear: both;
+    float: inherit;
+  }
+  @media #{$mq-small} {
+    margin-top: 0;
+  }
 }
 
-#redessociais .facebook {
-  background-image: url('../img/socialFacebook.png');
-}
-
-#redessociais .facebook:hover {
-  background-image: url('../img/socialFacebook.png');
-  background-position: 0 28px;
-  text-decoration: none;
-}
-
-#redessociais .instagram {
-  background-image: url('../img/socialInstagram.png');
-}
-
-#redessociais .instagram:hover {
-  background-image: url('../img/socialInstagram.png');
-  background-position: 0 28px;
-  text-decoration: none;
-}
-#redessociais .twitter {
-  background-image: url('../img/socialTwitter.png');
-}
-
-#redessociais .twitter:hover {
-  background-image: url('../img/socialTwitter.png');
-  background-position: 0 28px;
-  text-decoration: none;
-}
-#redessociais .youtube {
-  background-image: url('../img/socialYouTube.png');
-}
-
-#redessociais .youtube:hover {
-  background-image: url('../img/socialYouTube.png');
-  background-position: 0 28px;
-  text-decoration: none;
-}
-
-h1#logo {
+h1 {
   width: 233px;
   height: 253px;
   background-image: url('../img/distritoalfa.png');
   background-size: contain;
-  margin: 60px auto 0 auto;
-}
-
-h1#logo span {
-  display: none;
+  margin: 60px auto 20px auto;
+  span {
+    display: none;
+  }
 }
 
 h2 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 30px;
+  margin: 0 0 20px 0;
+  @include uppercasing;
 }

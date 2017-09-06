@@ -1,14 +1,9 @@
-
-.legend-destaque1 {
-  color: #ff9900;
-  font-size: 1.3em;
-}
-
-.legend-destaque2 {
-  font-size: 1em;
-}
-
 legend {
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 1em;
+  @include uppercasing;
+}
+
+.legend-destaque {
+  color: $cor2;
+  font-size: 1.3em;
 }

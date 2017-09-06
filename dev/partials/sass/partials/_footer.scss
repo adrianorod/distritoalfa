@@ -1,6 +1,4 @@
-
-.mastfoot {
-  color: #555;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+#footer {
+  margin-top: 10px;
+  @include uppercasing;
 }
