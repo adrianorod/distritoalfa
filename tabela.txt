@@ -1,0 +1,40 @@
+CREATE TABLE Instituicao (
+    ID int NOT NULL AUTO_INCREMENT,
+    Nome varchar(255) NOT NULL,
+    Telefone varchar(255) NOT NULL,
+    Email varchar(255) NOT NULL,
+    CONSTRAINT PK_Instituicao PRIMARY KEY (ID),
+);
+
+CREATE TABLE Responsavel (
+    ID int NOT NULL AUTO_INCREMENT,
+    Nome varchar(255) NOT NULL,
+    Telefone varchar(255) NOT NULL,
+    Email varchar(255) NOT NULL,
+    ID_Instituicao int NOT NULL,
+    CONSTRAINT PK_Responsavel PRIMARY KEY (ID),
+    FOREIGN KEY (ID_Instituicao) REFERENCES Instituicao(ID)
+);
+
+Tabela Evento
+- ID
+- Nome
+- Endereço
+- Data
+- Hora início
+- Hora término
+- Endereço eletrônico
+- Objetivo
+- Tempo de apresentação
+- Passagem de som
+- Cronograma
+- Instituição (FK ID_Instituicao)
+- Responsável (FK ID_Responsável)
+
+Tabela Estrutura
+- ID
+- Microfones
+- Pedestais
+- Outros
+- Observacoes
+- ID Evento (FK ID_Evento)
