@@ -1,13 +1,10 @@
-[25-Aug-2017 22:01:29 UTC] PHP Parse error:  syntax error, unexpected '&' in /home/distrit1/public_html/homol/app/php/db.php on line 137
-[25-Aug-2017 22:38:16 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/distrit1/public_html/homol/app/php/action.php on line 13
-[25-Aug-2017 22:39:01 UTC] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/distrit1/public_html/homol/app/php/action.php on line 8
-[25-Aug-2017 22:39:01 UTC] PHP Warning:  mysql_real_escape_string(): Access denied for user ''@'localhost' (using password: NO) in /home/distrit1/public_html/homol/app/php/action.php on line 8
-[25-Aug-2017 22:39:01 UTC] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/distrit1/public_html/homol/app/php/action.php on line 8
-[25-Aug-2017 22:39:01 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/distrit1/public_html/homol/app/php/db.php on line 12
-[25-Aug-2017 22:39:01 UTC] PHP Warning:  mysql_connect(): Access denied for user ''@'localhost' (using password: NO) in /home/distrit1/public_html/homol/app/php/db.php on line 12
-[25-Aug-2017 22:39:01 UTC] PHP Deprecated:  mysql_select_db(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/distrit1/public_html/homol/app/php/db.php on line 13
-[25-Aug-2017 22:39:01 UTC] PHP Warning:  mysql_select_db(): Access denied for user ''@'localhost' (using password: NO) in /home/distrit1/public_html/homol/app/php/db.php on line 13
-[25-Aug-2017 22:39:01 UTC] PHP Warning:  mysql_select_db(): A link to the server could not be established in /home/distrit1/public_html/homol/app/php/db.php on line 13
-[25-Aug-2017 22:39:01 UTC] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/distrit1/public_html/homol/app/php/db.php on line 14
-[25-Aug-2017 22:39:01 UTC] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in /home/distrit1/public_html/homol/app/php/db.php on line 14
-[25-Aug-2017 22:39:01 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/distrit1/public_html/homol/app/php/db.php on line 14
+[09-Sep-2017 14:43:35 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/distrit1/public_html/homol/php/post.php on line 9
+[09-Sep-2017 14:43:41 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/distrit1/public_html/homol/php/post.php on line 9
+[09-Sep-2017 14:44:11 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/distrit1/public_html/homol/php/post.php on line 9
+[09-Sep-2017 14:44:11 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/distrit1/public_html/homol/php/post.php on line 9
+[09-Sep-2017 14:44:11 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/distrit1/public_html/homol/php/post.php on line 9
+[09-Sep-2017 14:44:11 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/distrit1/public_html/homol/php/post.php on line 9
+[09-Sep-2017 14:44:47 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/distrit1/public_html/homol/php/post.php on line 9
+[09-Sep-2017 15:00:08 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/distrit1/public_html/homol/php/post.php on line 9
+[09-Sep-2017 15:00:10 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/distrit1/public_html/homol/php/post.php on line 9
+[09-Sep-2017 15:04:27 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/distrit1/public_html/homol/php/post.php on line 9

@@ -5,7 +5,7 @@
     .module('distritoalfa')
     .controller('convitesController', convitesController);
 
-  function convitesController($document) {
+  function convitesController($document, $http) {
     /* jshint validthis: true*/
     var vm = this;
 
