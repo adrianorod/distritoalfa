@@ -316,22 +316,28 @@ b,c,e){e=e||{};if(b=Q("removeClass",a,l(b,"-remove"),e.from))return C(a,c),b;x()
     .config(function($routeProvider, $locationProvider) {
 
       $routeProvider.when('/',{
-          templateUrl:"views/home.html",
-          controller:"homeController",
-          controllerAs:"vm"
-        });
+        templateUrl:"views/home.html",
+        controller:"homeController",
+        controllerAs:"vm"
+      });
 
       $routeProvider.when('/convites',{
-          templateUrl:"views/convites.html",
-          controller:"convitesController",
-          controllerAs:"vm"
-        });
+        templateUrl:"views/convites.html",
+        controller:"convitesController",
+        controllerAs:"vm"
+      });
 
       $routeProvider.when('/midias',{
-          templateUrl:"views/midias.html",
-          controller:"midiasController",
-          controllerAs:"vm"
-        });
+        templateUrl:"views/midias.html",
+        controller:"midiasController",
+        controllerAs:"vm"
+      });
+
+      $routeProvider.when('/admin',{
+        templateUrl:"views/admin.html",
+        controller:"adminController",
+        controllerAs:"vm"
+      });
 
       $routeProvider.otherwise({redirectTo: "/"});
 
@@ -409,5 +415,30 @@ b,c,e){e=e||{};if(b=Q("removeClass",a,l(b,"-remove"),e.from))return C(a,c),b;x()
     /* jshint validthis: true*/
     var vm = this;
     $rootScope.activetab = $location.path();
+  }
+})();
+
+(function() {
+  'use strict';
+
+  angular
+    .module('distritoalfa')
+    .controller('adminController', adminController);
+
+  function adminController($rootScope, $location, $http) {
+    /* jshint validthis: true*/
+    var vm = this;
+
+    vm.convite = [];
+
+    $http.get('php/get.php')
+      .success(function(retorno) {
+        console.log(retorno);
+        vm.convite = retorno;
+      })
+      .error(function(erro) {
+        console.log(erro);
+      });
+
   }
 })();

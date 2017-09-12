@@ -6,22 +6,28 @@
     .config(function($routeProvider, $locationProvider) {
 
       $routeProvider.when('/',{
-          templateUrl:"views/home.html",
-          controller:"homeController",
-          controllerAs:"vm"
-        });
+        templateUrl:"views/home.html",
+        controller:"homeController",
+        controllerAs:"vm"
+      });
 
       $routeProvider.when('/convites',{
-          templateUrl:"views/convites.html",
-          controller:"convitesController",
-          controllerAs:"vm"
-        });
+        templateUrl:"views/convites.html",
+        controller:"convitesController",
+        controllerAs:"vm"
+      });
 
       $routeProvider.when('/midias',{
-          templateUrl:"views/midias.html",
-          controller:"midiasController",
-          controllerAs:"vm"
-        });
+        templateUrl:"views/midias.html",
+        controller:"midiasController",
+        controllerAs:"vm"
+      });
+
+      $routeProvider.when('/admin',{
+        templateUrl:"views/admin.html",
+        controller:"adminController",
+        controllerAs:"vm"
+      });
 
       $routeProvider.otherwise({redirectTo: "/"});
 

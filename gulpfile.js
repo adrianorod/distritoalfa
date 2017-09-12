@@ -43,10 +43,11 @@ gulp.task('js-concat', function() {
     'dev/partials/js/app.js',
     'dev/partials/js/controllers/homeController.js',
     'dev/partials/js/controllers/convitesController.js',
-    'dev/partials/js/controllers/midiasController.js'
+    'dev/partials/js/controllers/midiasController.js',
+    'dev/partials/js/controllers/adminController.js'
   ])
     .pipe(concat('main.js'))
-    .pipe(minifyJs({ mangle: false }))
+//    .pipe(minifyJs({ mangle: false }))
     .pipe(gulp.dest('dev/js'));
 });
 
