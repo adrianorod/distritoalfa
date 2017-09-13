@@ -1,47 +1,53 @@
-CREATE TABLE Instituicao (
-    ID int NOT NULL AUTO_INCREMENT,
-    Nome varchar(255),
-    Telefone varchar(255),
-    Email varchar(255),
-    CONSTRAINT PK_Instituicao PRIMARY KEY (ID)
-)
+CREATE TABLE INSTITUICAO (
+ instituicao_id int NOT NULL AUTO_INCREMENT,
+ instituicao varchar(255) DEFAULT NULL,
+ telInstituicao varchar(255) DEFAULT NULL,
+ emailInstituicao varchar(255) DEFAULT NULL,
+ PRIMARY KEY (instituicao_id)
+) 
 
-CREATE TABLE Responsavel (
-    ID int NOT NULL AUTO_INCREMENT,
-    Nome varchar(255),
-    Telefone varchar(255),
-    Email varchar(255),
-    Instituicao int,
-    CONSTRAINT PK_Responsavel PRIMARY KEY (ID),
-    FOREIGN KEY (Instituicao) REFERENCES Instituicao (ID)
-)
+CREATE TABLE RESPONSAVEL_INSTITUICAO (
+ responsavel_instituicao_id int NOT NULL AUTO_INCREMENT,
+ nomeResponsavel varchar(255) DEFAULT NULL,
+ telResponsavel varchar(255) DEFAULT NULL,
+ emailResponsavel varchar(255) DEFAULT NULL,
+ instituicao_id int DEFAULT NULL,
+ PRIMARY KEY (responsavel_instituicao_id),
+ FOREIGN KEY (instituicao_id) REFERENCES INSTITUICAO(instituicao_id)
+) 
 
-CREATE TABLE Evento (
-    ID int NOT NULL AUTO_INCREMENT,
-    Nome varchar(255),
-    Endereco varchar(255),
-    Data date,
-    HoraInicio time,
-    HoraTermino time,
-    Site varchar(255),
-    Objetivo text,
-    TempoApresentacao varchar(255),
-    PassagemDeSom time,
-    Cronograma text,
-    Instituicao int,
-    Responsavel int,
-    CONSTRAINT PK_Evento PRIMARY KEY (ID),
-    FOREIGN KEY (Instituicao) REFERENCES Instituicao (ID),
-    FOREIGN KEY (Responsavel) REFERENCES Responsavel (ID)
-)
+CREATE TABLE EVENTO (
+ evento_id int NOT NULL AUTO_INCREMENT,
+ nomeEvento varchar(255) DEFAULT NULL,
+ endereco varchar(255) DEFAULT NULL,
+ data date DEFAULT NULL,
+ horaInicio time DEFAULT NULL,
+ horaTermino time DEFAULT NULL,
+ enderecoEletronico varchar(255) DEFAULT NULL,
+ objetivo text,
+ tempoDeApresentacao varchar(255) DEFAULT NULL,
+ passagemDeSom time DEFAULT NULL,
+ cronograma text,
+ instituicao_id int DEFAULT NULL,
+ responsavel_instituicao_id int DEFAULT NULL,
+ PRIMARY KEY (evento_id),
+ FOREIGN KEY (instituicao_id) REFERENCES INSTITUICAO(instituicao_id),
+ FOREIGN KEY (responsavel_instituicao_id) REFERENCES RESPONSAVEL_INSTITUICAO(responsavel_instituicao_id)
+) 
 
-CREATE TABLE Estrutura (
-    ID int NOT NULL AUTO_INCREMENT,
-    Microfones int,
-    Pedestais int,
-    Outros text,
-    Observacoes text,
-    Evento int,
-    CONSTRAINT PK_Estrutura PRIMARY KEY (ID),
-    FOREIGN KEY (Evento) REFERENCES Evento (ID)
-)
+CREATE TABLE ESTRUTURA_EVENTO (
+ estrutura_evento_id int NOT NULL AUTO_INCREMENT,
+ microfonesQtd int DEFAULT NULL,
+ pedestaisQtd int DEFAULT NULL,
+ ampBaixo bit(1) DEFAULT NULL,
+ ampGuitarra bit(1) DEFAULT NULL,
+ canalTeclado bit(1) DEFAULT NULL,
+ canalViolao bit(1) DEFAULT NULL,
+ bateria bit(1) DEFAULT NULL,
+ pratosBateria bit(1) DEFAULT NULL,
+ caixaBateria bit(1) DEFAULT NULL,
+ obsEstrutura text,
+ evento_id int DEFAULT NULL,
+ PRIMARY KEY (estrutura_evento_id),
+ FOREIGN KEY (evento_id) REFERENCES EVENTO(evento_id)
+) 
