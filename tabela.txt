@@ -28,15 +28,6 @@ CREATE TABLE EVENTO (
  tempoDeApresentacao varchar(255) DEFAULT NULL,
  passagemDeSom time DEFAULT NULL,
  cronograma text,
- instituicao_id int DEFAULT NULL,
- responsavel_instituicao_id int DEFAULT NULL,
- PRIMARY KEY (evento_id),
- FOREIGN KEY (instituicao_id) REFERENCES INSTITUICAO(instituicao_id),
- FOREIGN KEY (responsavel_instituicao_id) REFERENCES RESPONSAVEL_INSTITUICAO(responsavel_instituicao_id)
-) 
-
-CREATE TABLE ESTRUTURA_EVENTO (
- estrutura_evento_id int NOT NULL AUTO_INCREMENT,
  microfonesQtd int DEFAULT NULL,
  pedestaisQtd int DEFAULT NULL,
  ampBaixo bit(1) DEFAULT NULL,
@@ -47,7 +38,9 @@ CREATE TABLE ESTRUTURA_EVENTO (
  pratosBateria bit(1) DEFAULT NULL,
  caixaBateria bit(1) DEFAULT NULL,
  obsEstrutura text,
- evento_id int DEFAULT NULL,
- PRIMARY KEY (estrutura_evento_id),
- FOREIGN KEY (evento_id) REFERENCES EVENTO(evento_id)
+ instituicao_id int DEFAULT NULL,
+ responsavel_instituicao_id int DEFAULT NULL,
+ PRIMARY KEY (evento_id),
+ FOREIGN KEY (instituicao_id) REFERENCES INSTITUICAO(instituicao_id),
+ FOREIGN KEY (responsavel_instituicao_id) REFERENCES RESPONSAVEL_INSTITUICAO(responsavel_instituicao_id)
 ) 
