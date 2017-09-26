@@ -14,3 +14,16 @@
 [18-Sep-2017 19:58:04 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/distrit1/public_html/homol/php/post.php on line 19
 [18-Sep-2017 19:58:07 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/distrit1/public_html/homol/php/post.php on line 19
 [18-Sep-2017 20:28:56 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/distrit1/public_html/homol/php/post.php on line 11
+[26-Sep-2017 18:02:53 UTC] PHP Warning:  require_once(phpmailer/PHPMailer.php): failed to open stream: No such file or directory in /home/distrit1/public_html/homol/php/functions.php on line 3
+[26-Sep-2017 18:02:53 UTC] PHP Fatal error:  require_once(): Failed opening required 'phpmailer/PHPMailer.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/distrit1/public_html/homol/php/functions.php on line 3
+[26-Sep-2017 18:03:49 UTC] PHP Fatal error:  Class 'PHPMailer' not found in /home/distrit1/public_html/homol/php/functions.php on line 13
+[26-Sep-2017 18:04:03 UTC] PHP Fatal error:  Class 'PHPMailer' not found in /home/distrit1/public_html/homol/php/functions.php on line 13
+[26-Sep-2017 18:42:14 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/distrit1/public_html/homol/php/phpmailer/src/PHPMailer.php on line 1882
+[26-Sep-2017 18:42:19 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/distrit1/public_html/homol/php/phpmailer/src/PHPMailer.php on line 1882
+[26-Sep-2017 18:42:24 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/distrit1/public_html/homol/php/phpmailer/src/PHPMailer.php on line 1882
+[26-Sep-2017 18:42:24 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/distrit1/public_html/homol/php/phpmailer/src/PHPMailer.php on line 1882
+[26-Sep-2017 18:42:24 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/distrit1/public_html/homol/php/phpmailer/src/PHPMailer.php on line 1882
+[26-Sep-2017 18:42:25 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/distrit1/public_html/homol/php/phpmailer/src/PHPMailer.php on line 1882
+[26-Sep-2017 18:42:25 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/distrit1/public_html/homol/php/phpmailer/src/PHPMailer.php on line 1882
+[26-Sep-2017 18:42:26 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/distrit1/public_html/homol/php/phpmailer/src/PHPMailer.php on line 1882
+[26-Sep-2017 18:42:27 UTC] PHP Fatal error:  Class 'PHPMailer\PHPMailer\Exception' not found in /home/distrit1/public_html/homol/php/phpmailer/src/PHPMailer.php on line 1882

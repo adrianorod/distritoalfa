@@ -1,6 +1,7 @@
 <?php
 
   require_once("db.php");
+  require_once("functions.php");
 
   $data = json_decode(file_get_contents('php://input'), true);
 
@@ -25,12 +26,9 @@
     */
   } catch(Exception $e) {
     log_exception($e);
-    $salvando = json_encode($data);
-    $fp = fopen("log_convites_error.txt", "a");
-    $escreve = fwrite($fp, $salvando);
-    fclose($fp);
+    salvarTxt($data);
   } finally {
-    //nada por enquanto
+    enviarEmail($data);
   }
 
 ?>
