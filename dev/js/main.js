@@ -366,9 +366,10 @@ b,c,e){e=e||{};if(b=Q("removeClass",a,l(b,"-remove"),e.from))return C(a,c),b;x()
     .module('distritoalfa')
     .controller('convitesController', convitesController);
 
-  function convitesController($document, $http) {
+  function convitesController($rootScope, $location, $document, $http) {
     /* jshint validthis: true*/
     var vm = this;
+    $rootScope.activetab = $location.path();
 
     vm.validar = validar;
     function validar(formConvite) {
