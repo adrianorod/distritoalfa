@@ -1,5 +1,115 @@
 <h2>Admin</h2>
 <h3>Convites</h3>
 <div ng-repeat="convite in vm.convite">
-    <h4>{{convite.data}} || {{convite.instituicao}}</h4>
+    <h4>{{convite.data}} | {{convite.instituicao}}</h4>
+    
+    <table class="table table-responsive-sm">
+        <thead>
+            <tr class="table-secondary"><th colspan="2">Contratante</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Tel da instituição</th>
+                <td>{{convite.telInstituicao}}</td>
+            </tr>
+            <tr>
+                <th scope="row">E-mail da instituição</th>
+                <td>{{convite.emailInstituicao}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Responsável</th>
+                <td>{{convite.nomeResponsavel}}</td>
+            </tr>
+            <tr>
+                <th scope="row">E-mail do responsável</th>
+                <td>{{convite.emailResponsavel}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-responsive-sm">
+        <thead>
+            <tr class="table-secondary"><th colspan="2">Evento</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Evento</th>
+                <td>{{convite.nomeEvento}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Local</th>
+                <td>{{convite.endereco}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Início</th>
+                <td>{{convite.horaInicio}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Término</th>
+                <td>{{convite.horaTermino}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Site</th>
+                <td>{{convite.enderecoEletronico}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Objetivo</th>
+                <td>{{convite.objetivo}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Tempo de apresentação / quantidade de músicas</th>
+                <td>{{convite.tempoDeApresentacao}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Passagem de som</th>
+                <td>{{convite.passagemDeSom}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Cronograma</th>
+                <td>{{convite.cronograma}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-responsive-sm">
+        <thead>
+            <tr class="table-secondary"><th colspan="2">Estrutura</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Microfones</th>
+                <td>{{convite.microfonesQtd}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Pedestais</th>
+                <td>{{convite.pedestaisQtd}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Amplificador para baixo</th>
+                <td>{{convite.ampBaixo}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Amplificador para guitarra</th>
+                <td>{{convite.ampGuitarra}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Canal para teclado</th>
+                <td>{{convite.canalTeclado}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Bateria</th>
+                <td>{{convite.bateria}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Pratos para bateria</th>
+                <td>{{convite.pratosBateria}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Caixa para bateria</th>
+                <td>{{convite.caixaBateria}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Outras observações</th>
+                <td>{{convite.obsEstrutura}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
