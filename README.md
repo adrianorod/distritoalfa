@@ -1,4 +1,4 @@
-Projeto PT-BR que contempla o site da banda Distrito Alfa (http://distritoalfa.com.br).
+Projeto PT-BR que contempla o site da banda Distrito Alfa (https://distritoalfa.com.br/site).
 
 - HTML5
 - Bootstrap
